@@ -5,21 +5,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-        <div class="input-group">
-            <label>Username:</label>
-            <input type="text" id="username" required>
-        </div>
-        <div class="input-group">
-            <label>Password:</label>
-            <input type="password" id="password" required>
-        </div>
-        <button type="submit">Login</button>
-    </form>
-    <div id="message"></div>
-</div>
+    <div class="header">
+        <h1>Electricity Billing System</h1>
+    </div>
+    <div class="login-container">
+        <h2>Login to Billing System</h2>
+        
+        <div class="error-message" id="error-message"></div>
+        
+        <form id="loginForm">
+            <div class="input-field">
+                <label for="username">USERNAME:</label>
+                <input type="username" id="username" name="username" placeholder="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div id="message"></div>
+    </div>
+       
 <script src="app.js"></script>
 </body>
 </html>
+
+
